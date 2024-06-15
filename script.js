@@ -1,11 +1,13 @@
 const container  = document.querySelector(".container");
+const WIDTH = 500;
+const HEIGHT = 250;
 
 let resetButton = document.querySelector(".reset-btn");
 resetButton.addEventListener("click", function() {
     location.reload();
 });
 
-sketchBegin(16,16);
+sketchBegin(40,40);
 
 function sketchBegin(rows,columns) {
     //Create Rows
@@ -19,7 +21,7 @@ function sketchBegin(rows,columns) {
             column.classList.add("column");
 
             //Make Borders Visible
-            column.style.padding = "15px";
+            column.style.padding = HEIGHT/columns +"px " + WIDTH/rows + "px";
             column.style.border = "1px solid";
             column.style.borderColor = "Black";
 
