@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-btn {
+    border-radius: 15px;
+    color: blueviolet;
+    align-self: center;
+    padding: 20px;
+}
