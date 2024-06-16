@@ -2,18 +2,29 @@ body {
     min-height: 100vh;
     margin: 0;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     gap: 50px;
-    
+}
+
+.limits {
+    display: flex;
+    height: 450px;
+    width: 800px;
 }
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300;
-    width: 550;
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.column {
+    box-sizing: border-box;
 }
 
 .reset-btn {
