@@ -1,27 +1,28 @@
 const container  = document.querySelector(".container");
-const WIDTH = 500;
-const HEIGHT = 250;
+const HEIGHT = 450;
 
 let resetButton = document.querySelector(".reset-btn");
 resetButton.addEventListener("click", function() {
     location.reload();
 });
 
-sketchBegin(40,40);
+sketchBegin(2,2);
 
 function sketchBegin(rows,columns) {
     //Create Rows
-    for (let i=0; i<=rows; i++) {
+    for (let i=0; i<=rows-1; i++) {
         let row = document.createElement("div");
         row.classList.add("row");
 
         //Create Columns
-        for(let o=0; o<=columns; o++) {
+        for(let o=0; o<=columns-1; o++) {
             let column = document.createElement("div");
             column.classList.add("column");
 
             //Make Borders Visible
-            column.style.padding = HEIGHT/columns +"px " + WIDTH/rows + "px";
+            let columnHeight = (100/columns);
+            console.log(columnHeight);
+            column.style.height = columnHeight +"%";
             column.style.border = "1px solid";
             column.style.borderColor = "Black";
 
