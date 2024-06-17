@@ -1,9 +1,15 @@
 body {
     min-height: 100vh;
     margin: 0;
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.interface {
+    display: flex;
     gap: 50px;
 }
 
@@ -33,5 +39,13 @@ body {
     border-radius: 15px;
     color: blueviolet;
     align-self: center;
-    padding: 20px;
+    padding: 15px;
+}
+
+.grid-btn {
+    border-radius: 15px;
+    color: green;
+    align-self: center;
+    padding: 15px;
+    margin-right: 50px;
 }

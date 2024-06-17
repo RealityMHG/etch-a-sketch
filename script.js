@@ -1,12 +1,28 @@
 const container  = document.querySelector(".container");
 const HEIGHT = 450;
 
+let currentRow = 16;
+let currentColumn = 16;
+
 let resetButton = document.querySelector(".reset-btn");
 resetButton.addEventListener("click", function() {
     location.reload();
 });
 
-sketchBegin(2,2);
+let gridChangeButton = document.querySelector(".grid-btn");
+gridChangeButton.addEventListener("click", function() {
+    let gridPromptRow = Number(window.prompt("How many rows?", 16));
+    currentRow = gridPromptRow;
+    let gridPromptColumn = Number(window.prompt("How many columns?", 16));
+    currentColumn = gridPromptColumn;
+    sketchBegin(currentRow,currentColumn);
+});
+
+sketchBegin(currentRow,currentColumn);
+
+function sketchClear() {
+    
+}
 
 function sketchBegin(rows,columns) {
     //Create Rows
