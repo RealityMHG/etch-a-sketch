@@ -63,7 +63,7 @@ function sketchBegin(rows,columns) {
             row.appendChild(column);
 
             column.addEventListener("mouseover", (event) => {
-                var randomColor = Math.floor(Math.random()*16777215).toString(16);
+                let randomColor = Math.floor(Math.random()*16777215).toString(16);
                 if(!event.target.style.backgroundColor)
                     event.target.style.backgroundColor = "#" + randomColor;
             });
